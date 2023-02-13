@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use app\Models\Person;
-use app\Models\Post;
+use App\Models\Person;
+use App\Models\Post;
 
 class MainController extends Controller
 {
