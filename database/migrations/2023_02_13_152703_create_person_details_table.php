@@ -13,7 +13,7 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('person_details', function (Blueprint $table) {
-            $table->id();
+            /* $table->id(); */
             $table->string('phone_num', 16)->unique();
             $table->string('address')->unique();
             $table->string('avatar')->default('generic_avatar.png');
