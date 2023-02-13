@@ -14,7 +14,7 @@ return new class extends Migration {
     {
         Schema::create('person_details', function (Blueprint $table) {
             /* $table->id(); */
-            $table->string('phone_num', 16)->unique();
+            $table->string('phone_num')->unique();
             $table->string('address')->unique();
             $table->string('avatar')->default('generic_avatar.png');
             $table->timestamps();

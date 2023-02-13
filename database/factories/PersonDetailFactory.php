@@ -17,8 +17,8 @@ class PersonDetailFactory extends Factory
     public function definition()
     {
         return [
-            'phone_num' => fake()->phoneNumber(),
-            'addess' => fake()->streetAddress(),
+            'phone_num' => fake()->unique()->phoneNumber(),
+            'address' => fake()->unique()->streetAddress(),
             'avatar' => 'https://picsum.photos/800/600?random=' . fake()->randomNumber(5, true),
         ];
     }
